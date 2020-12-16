@@ -5,4 +5,3 @@ public class Swimming extends SummerSportGames {
         super(winner);
     }
 }
-

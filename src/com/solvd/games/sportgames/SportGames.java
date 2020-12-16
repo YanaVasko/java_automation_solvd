@@ -1,13 +1,13 @@
 package com.solvd.games.sportgames;
 
 public class SportGames {
-    private String winner;     
-    private int numOfMedals; 
+    private String winner;
+    private int numOfMedals;
     private double record;
 
-    public SportGames () {
+    public SportGames() {
         this.winner = "Greece";
-        this.numOfMedals = 0; 
+        this.numOfMedals = 0;
         this.record = 0;
     }
 
@@ -25,7 +25,7 @@ public class SportGames {
     public void setWinner(String winner) {
         this.winner = winner;
     }
-        
+
     public String getWinner() {
         return this.winner;
     }
@@ -33,7 +33,7 @@ public class SportGames {
     public void setNumOfMedals(int numOfMedals) {
         this.numOfMedals = numOfMedals;
     }
-        
+
     public int getNumOfMedals() {
         return this.numOfMedals;
     }
@@ -41,10 +41,11 @@ public class SportGames {
     public void setRecord(double record) {
         this.record = record;
     }
-        
+
     public double getRecord() {
         return this.record;
     }
+
     public void printFields() {
         System.out.println("Winner of the game: " + this.winner);
         System.out.println("Number of medals: " + this.numOfMedals);

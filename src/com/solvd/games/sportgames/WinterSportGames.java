@@ -1,13 +1,14 @@
 package com.solvd.games.sportgames;
 
 public class WinterSportGames extends SportGames {
-   
-    private String hostCountry;    
+
+    private String hostCountry;
     private int yearOfGames;
-    
+
     public WinterSportGames() {
         super();
     }
+
     public WinterSportGames(String winner) {
         super(winner);
         this.hostCountry = "South Korea";
