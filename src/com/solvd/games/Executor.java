@@ -1,59 +1,23 @@
 package com.solvd.games;
-
+import java.util.List;
+import java.util.Arrays;
 import com.solvd.games.sportgames.*;
+
+//import jdk.javadoc.internal.doclets.toolkit.BaseConfiguration.Hidden;
 
 public class Executor {
 
     public static void main(String[] args) {
 
-        System.out.println("=====Sport Games======");
-        SportGames sportGames = new SportGames();
-        sportGames.printFields();
+        Sport skeleton = new Skeleton();
+        Sport biathlon = new Biathlon(5.26);
+        Sport basketball = new Basketball("Basketball");
+        Sport hockey = new Hockey("Canada");
 
-        System.out.println("=====Sport Games======");
-        SportGames sportGames1 = new SportGames();
-        sportGames1.setWinner("Agg");
-        sportGames1.setNumOfMedals(12);
-        sportGames1.setRecord(2.35);
-        sportGames1.printFields();
-
-        System.out.println("======Canoeing Summer Olimpic Game========");
-        Canoeing canoeing1 = new Canoeing();
-        canoeing1.printFields();
-
-        System.out.println("======Hockey Winter Olimpic Game========");
-        Hockey hockey1 = new Hockey("");
-        hockey1.printFields();
-
-        System.out.println("======Swimming Summer Olimpic Game========");
-        Swimming swimming1 = new Swimming("Ukraine");
-        swimming1.setNumOfMedals(10);
-        swimming1.setRecord(10.55);
-        swimming1.printFields();
-
-        System.out.println("======Swimming2 Summer Olimpic Game========");
-        Swimming swimming2 = new Swimming("USA");
-        swimming2.printFields();
-
-        System.out.println("======Basketball Summer Olimpic Game=====");
-        Basketball basketball1 = new Basketball();
-        basketball1.printFields();
-        basketball1.play();
-        basketball1.printInfo();
-
-        System.out.println("======Skeleton Summer Olimpic Game=====");
-        Skeleton skeleton = new Skeleton();
-        skeleton.printFields();
-        skeleton.play();
-        skeleton.printInfo();
-
-        System.out.println(skeleton.getPrize());
-
-        System.out.println("======Artistic Gymnastic=====");
-        ArtisticGymnastic artgym = new ArtisticGymnastic();
-        artgym.printFields();
-        artgym.setScore(5);
-        artgym.printFields();
-
+        List<Sport> sports = Arrays.asList(skeleton, biathlon, basketball, hockey);
+        for (Sport s : sports) {
+            s.printInfo();
+            s.play();
+        }
     }
-}
+}   

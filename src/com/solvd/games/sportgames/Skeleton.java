@@ -1,23 +1,17 @@
 package com.solvd.games.sportgames;
 
-public class Skeleton extends WinterSportGames implements Sport, Winner {
+public class Skeleton extends WinterSportGames implements Sport {
     public Skeleton() {
         super();
     }
 
     @Override
     public void play() {
-        System.out.println("Playing " + this.getClass().getSimpleName());
+        System.out.println(this.getClass().getSimpleName() + " is very dangerous type of sport games. Do not play in such game");
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Skeleton");
-        System.out.println(this.getWinner());
-    }
-
-    @Override
-    public boolean getPrize() {
-        return true;
+        System.out.println("======" + this.getClass().getSimpleName() + " is Winter Olympic Game=====");
     }
 }
