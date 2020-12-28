@@ -8,11 +8,11 @@ public abstract class Gymnastics extends SummerSportGames {
 
     public abstract void setScore(int score);
 
-    public String getType() {
+    public final String getType() {
         return gymnasticType;
     }
 
-    public void setGymnacticsType(String gymnasticType) {
+    public final void setGymnacticsType(String gymnasticType) {
         this.gymnasticType = gymnasticType;
     }
 }
