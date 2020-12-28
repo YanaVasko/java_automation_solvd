@@ -7,6 +7,15 @@ public class Executor {
 
     public static void main(String[] args) {
 
+        System.out.println("=====Canoeing Games======");
+        Canoeing canoeing = new Canoeing();
+        canoeing.setMonthOfGames(2);
+        canoeing.setChampionName("Jack");
+        canoeing.printInfo();
+    
+        canoeing.setChampionName("Jack", "Luke" );
+        canoeing.printInfo();
+
         Sport skeleton = new Skeleton();
         Sport biathlon = new Biathlon(5.26);
         Sport basketball = new Basketball("Basketball");

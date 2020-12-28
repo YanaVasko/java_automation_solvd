@@ -2,6 +2,7 @@ package com.solvd.games.sportgames;
 
 public class WinterSportGames extends SportGames {
 
+    public static final String HOST_COUNTRY = "South Korea";
     private String hostCountry;
     private int yearOfGames;
 
@@ -11,7 +12,7 @@ public class WinterSportGames extends SportGames {
 
     public WinterSportGames(String winner) {
         super(winner);
-        this.hostCountry = "South Korea";
+        this.hostCountry = HOST_COUNTRY;
         this.yearOfGames = 2018;
     }
 
